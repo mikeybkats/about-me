@@ -1,3 +1,50 @@
 * {
-  color: blue;
+  font-family: lucida console;
+}
+
+h1 {
+  margin-top: 50px;
+  line-height: 5px;
+}
+
+h2 {
+  color: gray;
+}
+
+p {
+  color: gray;
+}
+
+#quizbutton {
+  color: white;
+  background-color: blue;
+  font-size: 16px;
+  border: none;
+  margin: 5px 5px 5px 5px;
+  padding: 8px 8px 8px 8px;
+  width: 150px;
+  display: block;
+  float: right;
+}
+
+.container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section {
+  max-width: 640px;
+  margin: 20px auto 100px auto;
+  padding: 10px 20px 10px 20px;
+  display: block;
+  clear: both;
+}
+
+.education {
+  background-color: yellow;
+}
+
+.lists {
+  color: pink;
 }
