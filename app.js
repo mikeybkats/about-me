@@ -14,7 +14,6 @@ function quiz() {
     response1 = true;
     console.log(response1);
   }
-
   else {
     alert('Nope,' + username + '.' + ' music is my favorite hobby.');
     response1 = false;
@@ -30,7 +29,6 @@ function quiz() {
     var response2 = true;
     console.log(response2);
   }
-
   else {
     alert('Actually, no. ' + username + '. I come from a small country town.' );
     var response2 = false;
@@ -46,7 +44,6 @@ function quiz() {
     response3 = true;
     console.log(response3);
   }
-
   else {
     alert('That\'s wrong ' + username + '. My favorite color is gray.');
     response3 = false;
