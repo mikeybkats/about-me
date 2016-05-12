@@ -2,7 +2,7 @@
 
 function quiz() {
   var username = prompt('Hi dude, thanks for visiting. What\'s your name slugger?');
-  alert('Nice to meet you ' + username + '. I\'m going to give you a quiz about me. How well do you know me?');
+  alert('Nice to meet you ' + username + '. I\'m going to give you a quiz about me. A little game called: How well do you know me?');
   console.log('The user\'s name is ' + username + '.');
 
   var response1 = prompt('Is music my favorite hobby?').toLowerCase();
@@ -80,8 +80,117 @@ function quiz() {
     console.log(response5);
   }
 
-};
+  /* As a developer, I want to add a sixth question to my guessing game that takes numeric input,
+   and indicates to the user whether the guess is 'too high' or 'too low', and gives the user exactly
+  four opportunities to get the correct answer, so that my fancy programming skills are showcased.
+  1 - for loop counts from 1 to 5. If i = 1 then run x, if i = 2 then run x, if i = 3 then run x, if i = 5 then alert.
+  */
+  function guessShoeSize (){
+    var userInput = parseInt(prompt('What is my shoe size? My size is greater than 9 and less than 16. lol. You have four tries.'));
+    var successMessage = 'Success! You rule!';
+    var failureMessage = 'You are a failure! Try guessing again.';
+    var tryAgain = 'Give it another try.';
+    var tooLow = 'You are too low. Guess Higher';
+    var tooHigh = 'You are so high right now. :P';
+    var i = 0;
+    while (i < 4){
+      if (i = 0){
+        if (userInput === 11){
+          alert(successMessage);
+          break;
+        }
+        else{
+          if (userInput < 11){alert(tooLow);}
+          if (userInput > 11){alert(tooHigh);}
+          var userInput = parseInt(prompt(tryAgain));
+        }
+      };
+      if (i = 1){
+        if (userInput === 11){
+          alert(successMessage);
+          break;
+        }
+        else{
+          if (userInput < 11){alert(tooLow);}
+          if (userInput > 11){alert(tooHigh);}
+          var userInput = parseInt(prompt(tryAgain));
+        }
+      };
+      if (i = 2){
+        if (userInput === 11){
+          alert(successMessage);
+          break;
+        }
+        else{
+          if (userInput < 11){alert(tooLow);}
+          if (userInput > 11){alert(tooHigh);}
+          var userInput = parseInt(prompt(tryAgain));
+        }
+      };
+      if (i = 3){
+        if (userInput === 11){
+          alert(successMessage);
+          break;
+        }
+        else{
+          if (userInput < 11){alert(tooLow);}
+          if (userInput > 11){alert(tooHigh);}
+          var userInput = parseInt(prompt(tryAgain));
+        }
+      };
+      if (i = 4){alert('you failed.');};
+    }}
+  guessShoeSize();
 
+  function questionSeven(){
+    var questionSeven = prompt('Try guessing one of my favorite colors in six tries?');
+    var nextGuess = 'Try guessing again.';
+    var colorArray = ['gray', 'orange', 'mint green', 'purple', 'cerulean', 'eggplant'];
+    var correctAnswer = false;
+    var runAgain = false;
+    for (var i = 0; i < colorArray.length; i++){
+      if (runAgain === true){
+        var questionSeven = prompt('Try guessing again.');
+        if (questionSeven === colorArray[i]){
+          console.log('the user chose the color ' + questionSeven);
+          console.log('the user selection is not ' + correctAnswer);
+          correctAnswer = true;
+          console.log('the user selection is ' + correctAnswer);
+          alert('You have guessed correctly. Great job ' + username + '.');
+          break;
+        }
+        else {
+          alert('Wrong answer. You now have ' + (5 - i) + ' tries left.');
+          var runAgain = true;
+          if ((5 - i) === 0){
+            alert('You have lost. Sorry ' + username + '.');
+            break;
+          }
+        }
+      }
+      if (runAgain === false){
+        if (questionSeven === colorArray[i]){
+          console.log('the user chose the color ' + questionSeven);
+          console.log('the user selection is not ' + correctAnswer);
+          correctAnswer = true;
+          console.log('the user selection is ' + correctAnswer);
+          alert('You have guessed correctly. Great job ' + username + '.');
+          break;
+        }
+        else {
+          alert('Wrong answer. You now have ' + (5 - i) + ' tries left.');
+          var runAgain = true;
+          if ((5 - i) === 0){
+            alert('You have lost. Sorry ' + username + '.');
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  questionSeven();
+}
 document.getElementById('quizbutton').onclick = function(){
   quiz();
 };
