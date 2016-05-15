@@ -123,55 +123,53 @@ function quiz() {
         var correctSize = false;
       }
 
-<<<<<<< HEAD
-  function questionSeven(){
-    var questionSeven = prompt('Try guessing one of my favorite colors in six tries?');
-    var nextGuess = 'Try guessing again.';
-    var colorArray = ['gray', 'orange', 'mint green', 'purple', 'cerulean', 'eggplant'];
-    var correctAnswer = false;
-    var runAgain = false;
-    for (var i = 0; i < colorArray.length; i++){
-      if (runAgain === true){
-        var questionSeven = prompt('Try guessing again.');
-        if (questionSeven === colorArray[i]){
-          console.log('the user chose the color ' + questionSeven);
-          console.log('the user selection is not ' + correctAnswer);
-          correctAnswer = true;
-          console.log('the user selection is ' + correctAnswer);
-          alert('You have guessed correctly. Great job ' + username + '.');
-          break;
-        }
-        else {
-          alert('Wrong answer. You now have ' + (5 - i) + ' tries left.');
-          var runAgain = true;
-          if ((5 - i) === 0){
-            alert('You have lost. Sorry ' + username + '.');
-            break;
+      function questionSeven(){
+        var questionSeven = prompt('Try guessing one of my favorite colors in six tries?');
+        var nextGuess = 'Try guessing again.';
+        var colorArray = ['gray', 'orange', 'mint green', 'purple', 'cerulean', 'eggplant'];
+        var correctAnswer = false;
+        var runAgain = false;
+        for (var i = 0; i < colorArray.length; i++){
+          if (runAgain === true){
+            var questionSeven = prompt('Try guessing again.');
+            if (questionSeven === colorArray[i]){
+              console.log('the user chose the color ' + questionSeven);
+              console.log('the user selection is not ' + correctAnswer);
+              correctAnswer = true;
+              console.log('the user selection is ' + correctAnswer);
+              alert('You have guessed correctly. Great job ' + username + '.');
+              break;
+            }
+            else {
+              alert('Wrong answer. You now have ' + (5 - i) + ' tries left.');
+              var runAgain = true;
+              if ((5 - i) === 0){
+                alert('You have lost. Sorry ' + username + '.');
+                break;
+              }
+            }
+          }
+          if (runAgain === false){
+            if (questionSeven === colorArray[i]){
+              console.log('the user chose the color ' + questionSeven);
+              console.log('the user selection is not ' + correctAnswer);
+              correctAnswer = true;
+              console.log('the user selection is ' + correctAnswer);
+              alert('You have guessed correctly. Great job ' + username + '.');
+              break;
+            }
+            else {
+              alert('Wrong answer. You now have ' + (5 - i) + ' tries left.');
+              var runAgain = true;
+              if ((5 - i) === 0){
+                alert('You have lost. Sorry ' + username + '.');
+                break;
+              }
+            }
           }
         }
       }
-      if (runAgain === false){
-        if (questionSeven === colorArray[i]){
-          console.log('the user chose the color ' + questionSeven);
-          console.log('the user selection is not ' + correctAnswer);
-          correctAnswer = true;
-          console.log('the user selection is ' + correctAnswer);
-          alert('You have guessed correctly. Great job ' + username + '.');
-          break;
-        }
-        else {
-          alert('Wrong answer. You now have ' + (5 - i) + ' tries left.');
-          var runAgain = true;
-          if ((5 - i) === 0){
-            alert('You have lost. Sorry ' + username + '.');
-            break;
-          }
-        }
-      }
-    }
-  }
 
-=======
       if (guesses === 0){
         alert('You have lost the game.');
         correctSize = false;
@@ -217,7 +215,6 @@ function quiz() {
   username();
   questionOne();
   guessShoeSize();
->>>>>>> 1828b47257177657add74d1f0c012ca2eb75a703
   questionSeven();
   endingMessage();
 
