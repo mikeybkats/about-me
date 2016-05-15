@@ -1,10 +1,8 @@
-//this is a comment
+//this is a scratch pad for project tests and ideas
 
 function quiz() {
-  // var username = prompt('Hi dude, thanks for visiting. What\'s your name slugger?');
-  // alert('Nice to meet you ' + username + '. I\'m going to give you a quiz about me. A little game called: How well do you know me?');
-  // console.log('The user\'s name is ' + username + '.');
 
+<<<<<<< HEAD
   function guessShoeSize (){
     var username = 'cob';
     var shoeSize = 11;
@@ -45,6 +43,9 @@ function quiz() {
     }
   }
   guessShoeSize();
+=======
+  questionSeven();
+>>>>>>> a11f5d76ab523176e0fa63b5fdb2fdf8718de882
 }
 
 document.getElementById('quizbutton').onclick = function(){
