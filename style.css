@@ -41,7 +41,7 @@ li {
 
 .section {
   max-width: 640px;
-  margin: 20px auto 100px auto;
+  margin: 20px auto 20px auto;
   padding: 10px 20px 10px 20px;
   display: block;
   clear: both;
@@ -58,6 +58,26 @@ li {
   background-color: none;
   border-radius: 12px;
   border: 4px solid yellow;
+}
+
+.experience {
+  background-color: darkorange;
+  border-radius: 12px;
+  border: 4px solid darkorange;
+}
+
+.contact {
+  background-color: none;
+  border-radius: 12px;
+  border: 4px solid CornflowerBlue;
+}
+
+.section.experience p {
+  color: azure;
+}
+
+.section.experience h2 {
+  color: azure;
 }
 
 .links {
