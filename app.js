@@ -130,7 +130,7 @@ function quiz() {
         questionTally = questionTally += 1;
       }
 
-      if (guesses === 0){
+      if (guesses <= 0){
         alert('Sorry ' + username + ' you have failed to guess the my size. Which is 11 BTW. ');
         var correctSize = false;
       }
@@ -166,6 +166,7 @@ function quiz() {
       }
       if (y === 0){
         alert('You have failed to guess one of my favorite colors. Well... here they are in case you were interested: Gray, purple, orange, mint green, cerulean, eggplant (which is really just dark purple). =)');
+        runAgain = true;
       }
     }
   }
