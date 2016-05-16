@@ -172,7 +172,7 @@ function quiz() {
   }
 
   function endingMessage (){
-    alert('That concludes our quiz. Thanks for playing! Your got ' + questionTally + ' out of a possible ' + 7 + ' questions correct.' );
+    alert('That concludes our quiz. Thanks for playing! You got ' + questionTally + ' out of a possible ' + 7 + ' questions correct.' );
   }
 
   questionSetOne();
