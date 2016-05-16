@@ -146,7 +146,7 @@ function quiz() {
     y = 6;
     while (correctAnswer === false){
       if (runAgain === false){
-        var questionSeven = prompt('Try guessing one of my favorite colors.');
+        var questionSeven = prompt('Try guessing one of my favorite colors.') || 0;
       }
       if (runAgain === true){
         var questionSeven = prompt('Try guessing again.');
@@ -160,13 +160,13 @@ function quiz() {
         }
       }
       y -= 1;
-      if (questionSeven !== colorArray[i]){
+      if (questionSeven !== colorArray[i] || 0){
         alert('wrong answer you have ' + y + ' tries left.');
         runAgain = true;
       }
       if (y === 0){
         alert('You have failed to guess one of my favorite colors. Well... here they are in case you were interested: Gray, purple, orange, mint green, cerulean, eggplant (which is really just dark purple). =)');
-        runAgain = true;
+        correctAnswer = true;
       }
     }
   }
